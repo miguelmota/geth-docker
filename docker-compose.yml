@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  geth:
+    build: .
+    ports:
+      - 8545:8545
+      - 8546:8546
