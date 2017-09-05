@@ -24,6 +24,10 @@ http://{docker_ip}:8546/
 
 ## Running in EC2
 
+Make sure to select an instance type with enough memory.
+
+Install and run instructions:
+
 ```bash
 sudo yum update -y
 sudo yum install -y docker
