@@ -19,7 +19,7 @@ http://{docker_ip}:8545/
 WebSocket URL
 
 ```
-http://{docker_ip}:8546/
+ws://{docker_ip}:8546/
 ```
 
 ## Running in EC2
@@ -54,6 +54,8 @@ sudo docker exec -it {container_id} geth attach ipc:/.rinkeby/geth.ipc
   startingBlock: 271758
 }
 ```
+
+Edit the EC2 instance security group inbound rules to allow ports `8545` and `8546`.
 
 # License
 
