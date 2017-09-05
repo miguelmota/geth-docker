@@ -46,6 +46,13 @@ Check syncing status:
 sudo docker exec -it {container_id} geth attach ipc:/.rinkeby/geth.ipc
 
 > eth.syncing
+{
+  currentBlock: 405371,
+  highestBlock: 837461,
+  knownStates: 272806,
+  pulledStates: 269942,
+  startingBlock: 271758
+}
 ```
 
 # License
