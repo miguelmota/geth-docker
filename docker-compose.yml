@@ -2,6 +2,7 @@ version: '2'
 
 services:
   geth:
+    image: geth-rinkeby-docker
     build: .
     ports:
       - 8545:8545
