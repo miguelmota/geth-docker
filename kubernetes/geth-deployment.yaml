@@ -1,0 +1,28 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  annotations:
+    kompose.cmd: kompose convert
+    kompose.version: 1.1.0 (36652f6)
+  creationTimestamp: null
+  labels:
+    io.kompose.service: geth
+  name: geth
+spec:
+  replicas: 1
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        io.kompose.service: geth
+    spec:
+      containers:
+      - image: aqt01/geth-rinkeby-docker
+        name: geth
+        ports:
+        - containerPort: 8545
+        - containerPort: 8546
+        resources: {}
+      restartPolicy: Always
+status: {}
