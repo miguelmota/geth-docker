@@ -4,8 +4,21 @@
 
 # Usage
 
+
+### Docker
+
 ```bash
 docker-compose up
+```
+
+### Kubernetes (minikube)
+
+
+```bash
+
+kubectl create -f ./kubernetes/geth-deployment.yaml 
+kubectl create -f ./kubernetes/geth-service.yaml 
+
 ```
 
 ## Ports
